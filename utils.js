@@ -1,8 +1,12 @@
+export function findById(id, data) {
+    return data.find((item) => item.id === id);
+}
+
 export function renderBooks(books) {
     const div = document.createElement('div');
     const h1 = document.createElement('h1');
     const img = document.createElement('img');
-    //const a = document.createElement('a');
+    const a = document.createElement('a');
 
     div.classList.add('books');
 
@@ -10,6 +14,9 @@ export function renderBooks(books) {
 
     img.src = `./assets/${books.name}.png`;
 
-    div.append(h1, img);
+    a.href = `./Books/?id=${books.id}`;
+
+    a.append(h1, img);
+    div.append(a);
     return div;
 }
