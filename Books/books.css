@@ -1,4 +1,6 @@
-
+body {
+    --header-height: 80px;
+}
 main {
     display:flex;
     flex-direction: column; 
@@ -9,6 +11,7 @@ img {
     height: auto;
     max-width: 100%;
     height: auto;
+    border: 2px solid gold;
 }
 #books {
     display:flex;
