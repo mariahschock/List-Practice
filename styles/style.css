@@ -29,6 +29,8 @@ body {
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
+    background-image: url(https://wallpaperaccess.com/full/6542215.jpg);
+    background-size:contain;
 }
 
 main {
